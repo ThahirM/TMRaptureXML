@@ -1,0 +1,6 @@
+framework module Pods_TMRaptureXML_Tests {
+  umbrella header "Pods-TMRaptureXML_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

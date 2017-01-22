@@ -1,0 +1,6 @@
+use_frameworks!
+target 'TMRaptureXML_Tests' do
+  pod 'TMRaptureXML', :path => '../'
+  
+  
+end

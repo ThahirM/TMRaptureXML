@@ -1,0 +1,6 @@
+framework module TMRaptureXML {
+  umbrella header "TMRaptureXML-umbrella.h"
+
+  export *
+  module * { export * }
+}
