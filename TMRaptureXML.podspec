@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
     s.preserve_paths = 'TMRaptureXML/TMRaptureXML/Bridging-Header.h'
 
     s.libraries     = 'z', 'xml2'
-    s.xcconfig      = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/TMRaptureXML/TMRaptureXML/Bridging-Header.h' }
+    s.xcconfig      = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/TMRaptureXML/Bridging-Header.h' }
 
 end
