@@ -15,16 +15,16 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/ThahirM/TMRaptureXML.git', :tag => s.version.to_s }
 
     s.ios.deployment_target = '9.0'
+    s.source_files = 'TMRaptureXML/**/*'
 
     s.subspec 'RaptureXML' do |s1|
         s1.source_files = 'TMRaptureXML/RaptureXML/**/*'
         s1.requires_arc = true
     end
 
-    s.libraries     = 'z', 'xml2'
-    s.xcconfig      = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
+    s.preserve_paths = 'TMRaptureXML/TMRaptureXML/Bridging-Header.h'
 
-#    s.preserve_paths = 'TMRaptureXML/TMRaptureXML/Bridging-Header.h'
-#    s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/TMRaptureXML/TMRaptureXML/Bridging-Header.h' }
+    s.libraries     = 'z', 'xml2'
+    s.xcconfig      = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/TMRaptureXML/TMRaptureXML/Bridging-Header.h' }
 
 end
