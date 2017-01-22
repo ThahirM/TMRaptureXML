@@ -17,10 +17,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     s.source_files = 'TMRaptureXML/**/*'
 
-    s.subspec 'RaptureXML' do |s1|
-        s1.source_files = 'TMRaptureXML/RaptureXML/**/*'
-        s1.requires_arc = true
-    end
+    s.requires_arc = true
 
     s.preserve_paths = 'TMRaptureXML/TMRaptureXML/Bridging-Header.h'
 
